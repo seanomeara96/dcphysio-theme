@@ -1,0 +1,42 @@
+.review {
+  display: flex;
+  gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 2rem;
+  /*
+  not a very descriptive name
+  */
+  &--no-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+  &--spaced {
+    margin: 1rem auto;
+    & div {
+      margin: 0.3rem 0;
+    }
+  }
+  &__author {
+    font-size: 1.2rem;
+  }
+  &__rating {
+    color: $orange;
+    font-size: 1.2rem;
+  }
+  &__avatar {
+    background-color: purple;
+    color: #fff;
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+}

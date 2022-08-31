@@ -1,0 +1,12 @@
+.generic-content {
+  color: $lightText;
+  &--large {
+    font-size: 1.8rem;
+  }
+  &--light {
+    font-weight: light;
+  }
+  &--center {
+    text-align: center;
+  }
+}

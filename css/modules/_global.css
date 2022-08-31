@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 25px;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.clickable {
+  color: $orange;
+  cursor: pointer;
+}
+
+a {
+  color: $orange;
+}

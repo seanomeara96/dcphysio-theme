@@ -1,0 +1,36 @@
+.page-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  @media (min-width: 800px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  &--first {
+    padding-top: 3rem;
+  }
+  &--no-p {
+    padding: 0;
+  }
+  &--full-height {
+    height: 100vh;
+  }
+  &--small {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &--dark-blue {
+    background-color: $darkBlue;
+    color: #fff;
+  }
+  &--navy {
+    background-color: $navy;
+  }
+  &--white {
+    background-color: #fff;
+  }
+  &--light-grey,
+  &--light-gray {
+    background-color: $lightGray;
+  }
+}
