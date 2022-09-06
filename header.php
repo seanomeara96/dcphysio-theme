@@ -36,9 +36,7 @@
       );
 
       function find_object_by_url($pageDetails, $searchURL){
-        
         foreach($pageDetails as $page){
-          
           if($page->url === $searchURL){
             return $page;
           }
@@ -56,7 +54,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
-    <!--<link href="/assets/index.39f5067d47a50ffb4daa.css" rel="stylesheet" />-->
+  
     <?php wp_head(); ?>
   </head>
   <body>
