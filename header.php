@@ -5,8 +5,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="DC Physio Clondalkin specialise in Low Back and Neck Pain. We are a Chartered Physiotherapy Clinic offering best in class Physio. We are experts in Non-Surgical Spinal Decompression." />
-    <title>Physio Clondalkin - Chartered Physiotherapy Clinic</title>
+    <?php 
+
+      $pageSEO = array(
+          (object)array("url" => "", "title" => "Physio Clondalkin - Chartered Physiotherapy Clinic", "description" => "DC Physio Clondalkin specialise in Low Back and Neck Pain. We are a Chartered Physiotherapy Clinic offering best in class Physio. We are experts in Non-Surgical Spinal Decompression."),
+          (object)array("url" => "about", "title" => "About Physiotherapy Clondalkin | DC Physiotherapy Clinic", "description" => "Physiotherapy Clondalkin is an expert Chartered Physiotherapy Clinic specializing in the treatment of Low Back and Neck Pain from a Disc Herniation or Sciatica.")
+      );
+
+      function find_object_by_url($pageDetails, $searchURL){
+        
+        foreach($pageDetails as $page){
+          
+          if($page->url === $searchURL){
+            return $page;
+          }
+        }
+        return $pageSEO[0];
+      }
+
+      $currentPageDetails = find_object_by_url($pageSEO, $wp->request);
+?>
+    <title><?php echo $currentPageDetails->title ?></title>
+    <meta name="description" content=<?php echo $currentPageDetails->description ?> />    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
