@@ -28,10 +28,29 @@
         </a>
       </div>
       <ul class="nav__links__inner">
-        <li class="nav__link nav__link--active">
+        <li class="nav__link <?php if($wp->request === "") echo "nav__link--active" ?>">
           <a href="/">Home</a>
         </li>
-        <li class="nav__link ">
+        <li class="nav__link  <?php if(in_array($wp->request, array(
+          "conditions-we-treat", 
+          "sciatica", 
+          "lumbar-disc-herniation",
+          "low-back-pain",
+          "bulging-discs",
+          "chronic-pain",
+          "degenerative-disc-disease",
+          "occupational-injuries",
+          "ankle-sprain",
+          "tendonitis",
+          "arthritis-osteoarthritis",
+          "sports-physiotherapy",
+          "whiplash",
+          "deep-tissue-massage",
+          "dry-needling-trigger-point-therapy",
+          "neck-pain",
+          "spinal-mobilisations",
+          "spinal-manipulation"
+          ))) echo "nav__link--active" ?>">
           <a href="/conditions-we-treat/">Conditions we Treat</a>
           <ul class="nav__sub-menu">
   <li><a href="/sciatica/">Sciatica</a></li>
@@ -65,21 +84,21 @@
 
         </li>
 
-        <li class="nav__link ">
+        <li class="nav__link <?php if($wp->request === "non-surgical-spinal-decompression") echo "nav__link--active" ?>">
           <a href="/non-surgical-spinal-decompression/"
             >Non-Surgical Spinal Decompression</a
           >
         </li>
-        <li class="nav__link ">
+        <li class="nav__link <?php if($wp->request === "about") echo "nav__link--active" ?>">
           <a href="/about/">About Us</a>
         </li>
-        <li class="nav__link ">
+        <li class="nav__link <?php if($wp->request === "team") echo "nav__link--active" ?>">
           <a href="/team/">Team</a>
         </li>
-        <li class="nav__link ">
+        <li class="nav__link <?php if($wp->request === "pricing") echo "nav__link--active" ?>">
           <a href="/pricing/">Pricing</a>
         </li>
-        <li class="nav__link ">
+        <li class="nav__link <?php if($wp->request === "contact") echo "nav__link--active" ?>">
           <a href="/contact/">Contact</a>
         </li>
       </ul>
