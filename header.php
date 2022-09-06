@@ -7,6 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <?php 
 
+      $portfolioPages = array(
+        "conditions-we-treat", 
+        "sciatica", 
+        "lumbar-disc-herniation",
+        "low-back-pain",
+        "bulging-discs",
+        "chronic-pain",
+        "degenerative-disc-disease",
+        "occupational-injuries",
+        "ankle-sprain",
+        "tendonitis",
+        "arthritis-osteoarthritis",
+        "sports-physiotherapy",
+        "whiplash",
+        "deep-tissue-massage",
+        "dry-needling-trigger-point-therapy",
+        "neck-pain",
+        "spinal-mobilisations",
+        "spinal-manipulation"
+        )
+
       $pageSEO = array(
         (object)array("url"=>"","title"=>"Home - Physio Clondalkin - Chartered Physiotherapy Clinic","description"=>"DC Physio Clondalkin specialise in Low Back and Neck Pain. We are a Chartered Physiotherapy Clinic offering best in class Physio. We are experts in Non-Surgical Spinal Decompression."),
         (object)array("url"=>"sports-physiotherapy","title"=>"Sports Physiotherapy - DC Physiotherapy in Dublin are experts in Sports Physiotherapy","description"=>"DC Physiotherapy in Dublin are experts in Sports Physiotherapy assessments and treatments. We aim to get you back to your sport as fast as possible using an evident based approach."),
@@ -72,26 +93,7 @@
         <li class="nav__link <?php if($wp->request === "") echo "nav__link--active" ?>">
           <a href="/">Home</a>
         </li>
-        <li class="nav__link  <?php if(in_array($wp->request, array(
-          "conditions-we-treat", 
-          "sciatica", 
-          "lumbar-disc-herniation",
-          "low-back-pain",
-          "bulging-discs",
-          "chronic-pain",
-          "degenerative-disc-disease",
-          "occupational-injuries",
-          "ankle-sprain",
-          "tendonitis",
-          "arthritis-osteoarthritis",
-          "sports-physiotherapy",
-          "whiplash",
-          "deep-tissue-massage",
-          "dry-needling-trigger-point-therapy",
-          "neck-pain",
-          "spinal-mobilisations",
-          "spinal-manipulation"
-          ))) echo "nav__link--active" ?>">
+        <li class="nav__link  <?php if(in_array($wp->request, $portfolioPages)) echo "nav__link--active" ?>">
           <a href="/conditions-we-treat/">Conditions we Treat</a>
           <ul class="nav__sub-menu">
   <li><a href="/sciatica/">Sciatica</a></li>
