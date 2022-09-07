@@ -26,7 +26,7 @@
         "neck-pain",
         "spinal-mobilisations",
         "spinal-manipulation"
-        )
+      );
 
       $pageSEO = array(
         (object)array("url"=>"","title"=>"Home - Physio Clondalkin - Chartered Physiotherapy Clinic","description"=>"DC Physio Clondalkin specialise in Low Back and Neck Pain. We are a Chartered Physiotherapy Clinic offering best in class Physio. We are experts in Non-Surgical Spinal Decompression."),
