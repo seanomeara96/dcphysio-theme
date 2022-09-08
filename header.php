@@ -85,64 +85,64 @@
   <div class="nav__links">
     <div class="wrapper">
       <div class="nav__logo">
-        <a href="/">
+        <a href="<?php echo site_url('/'); ?>">
           <img src="<?php echo get_theme_file_uri("/assets/images/logo-white.png"); ?>" alt="" />
         </a>
       </div>
       <ul class="nav__links__inner">
         <li class="nav__link <?php if($wp->request === "") echo "nav__link--active" ?>">
-          <a href="/">Home</a>
+          <a href="<?php echo site_url('/'); ?>">Home</a>
         </li>
         <li class="nav__link  <?php if(in_array($wp->request, $portfolioPages)) echo "nav__link--active" ?>">
-          <a href="/conditions-we-treat/">Conditions we Treat</a>
+          <a href="<?php echo site_url('/conditions-we-treat/'); ?>">Conditions we Treat</a>
           <ul class="nav__sub-menu">
-  <li><a href="/sciatica/">Sciatica</a></li>
+  <li><a href="<?php echo site_url('/sciatica/'); ?>">Sciatica</a></li>
   <li>
-    <a href="/lumbar-disc-herniation/">Lumbar Disc Herniation</a>
+    <a href="<?php echo site_url('/lumbar-disc-herniation/'); ?>">Lumbar Disc Herniation</a>
   </li>
-  <li><a href="/low-back-pain/">Low Back Pain</a></li>
-  <li><a href="/bulging-discs/">Bulging Discs</a></li>
-  <li><a href="/chronic-pain/">Chronic Pain</a></li>
+  <li><a href="<?php echo site_url('/low-back-pain/'); ?>">Low Back Pain</a></li>
+  <li><a href="<?php echo site_url('/bulging-discs/'); ?>">Bulging Discs</a></li>
+  <li><a href="<?php echo site_url('/chronic-pain/'); ?>">Chronic Pain</a></li>
   <li>
-    <a href="/degenerative-disc-disease/">Degenerative Disc Disease</a>
+    <a href="<?php echo site_url('/degenerative-disc-disease/'); ?>">Degenerative Disc Disease</a>
   </li>
-  <li><a href="/occupational-injuries/">Occupational Injuries</a></li>
-  <li><a href="/ankle-sprain/">Ankle Sprain</a></li>
-  <li><a href="/tendonitis/">Tendonitis</a></li>
+  <li><a href="<?php echo site_url('/occupational-injuries/'); ?>">Occupational Injuries</a></li>
+  <li><a href="<?php echo site_url('/ankle-sprain/'); ?>">Ankle Sprain</a></li>
+  <li><a href="<?php echo site_url('/tendonitis/'); ?>">Tendonitis</a></li>
   <li>
-    <a href="/arthritis-osteoarthritis/">Arthritis | Osteoarthritis</a>
+    <a href="<?php echo site_url('/arthritis-osteoarthritis/'); ?>">Arthritis | Osteoarthritis</a>
   </li>
-  <li><a href="/sports-physiotherapy/">Sports Physiotherapy</a></li>
-  <li><a href="/whiplash/">Whiplash</a></li>
-  <li><a href="/deep-tissue-massage/">Deep Tissue Massage</a></li>
+  <li><a href="<?php echo site_url('/sports-physiotherapy/'); ?>">Sports Physiotherapy</a></li>
+  <li><a href="<?php echo site_url('/whiplash/'); ?>">Whiplash</a></li>
+  <li><a href="<?php echo site_url('/deep-tissue-massage/'); ?>">Deep Tissue Massage</a></li>
   <li>
-    <a href="/dry-needling-trigger-point-therapy/"
+    <a href="<?php echo site_url('/dry-needling-trigger-point-therapy/'); ?>"
       >Dry Needling Trigger Point Therapy</a
     >
   </li>
-  <li><a href="/neck-pain/">Neck Pain</a></li>
-  <li><a href="/spinal-mobilisations/">Spinal Mobilisations</a></li>
-  <li><a href="/spinal-manipulation/">Spinal Manipulation</a></li>
+  <li><a href="<?php echo site_url('/neck-pain/'); ?>">Neck Pain</a></li>
+  <li><a href="<?php echo site_url('/spinal-mobilisations/'); ?>">Spinal Mobilisations</a></li>
+  <li><a href="<?php echo site_url('/spinal-manipulation/'); ?>">Spinal Manipulation</a></li>
 </ul>
 
         </li>
 
         <li class="nav__link <?php if($wp->request === "non-surgical-spinal-decompression") echo "nav__link--active" ?>">
-          <a href="/non-surgical-spinal-decompression/"
+          <a href="<?php echo site_url('/non-surgical-spinal-decompression/'); ?>"
             >Non-Surgical Spinal Decompression</a
           >
         </li>
         <li class="nav__link <?php if($wp->request === "about") echo "nav__link--active" ?>">
-          <a href="/about/">About Us</a>
+          <a href="<?php echo site_url('/about/'); ?>">About Us</a>
         </li>
         <li class="nav__link <?php if($wp->request === "team") echo "nav__link--active" ?>">
-          <a href="/team/">Team</a>
+          <a href="<?php echo site_url('/team/'); ?>">Team</a>
         </li>
         <li class="nav__link <?php if($wp->request === "pricing") echo "nav__link--active" ?>">
-          <a href="/pricing/">Pricing</a>
+          <a href="<?php echo site_url('/pricing/'); ?>">Pricing</a>
         </li>
         <li class="nav__link <?php if($wp->request === "contact") echo "nav__link--active" ?>">
-          <a href="/contact/">Contact</a>
+          <a href="<?php echo site_url('/contact/'); ?>">Contact</a>
         </li>
       </ul>
     </div>
