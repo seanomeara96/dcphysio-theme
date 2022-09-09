@@ -10,6 +10,6 @@
     I am writing custom titles in header.php so wont be needing this
 
     function dcphysio_features(){
-        add_them_support("title-tag")
+        add_theme_support("title-tag")
     }
     add_action("after_setup_theme", "dcphysiotherapy_features");*/
