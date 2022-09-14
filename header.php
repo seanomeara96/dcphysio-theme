@@ -77,6 +77,73 @@
     />
   
     <?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-63140320-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-63140320-2");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <meta
+      name="facebook-domain-verification"
+      content="1co28g95zc4myefrogih9u10aq2o05"
+    />
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+
+      fbq("init", "142300159800131");
+
+      fbq("track", "PageView");
+    </script>
+
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=142300159800131&ev=PageView&noscript=1"
+      />
+    </noscript>
+
+    <!-- End Facebook Pixel Code -->
+    <meta
+      name="google-site-verification"
+      content="Oj1OSoAT-s_6inxFhAXavR2FCQ8b1K6Q_bCLuhh2dPY"
+    />
+
+
   </head>
   <body>
     <nav class="nav page-section--small">
