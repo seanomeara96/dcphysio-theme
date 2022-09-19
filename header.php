@@ -22,10 +22,10 @@
         "sports-physiotherapy", // done
         "whiplash", // done
         "deep-tissue-massage", // done
-        "dry-needling-trigger-point-therapy",
-        "neck-pain",
-        "spinal-mobilisations",
-        "spinal-manipulation"
+        "dry-needling-trigger-point-therapy", // done
+        "neck-pain", // done
+        "spinal-mobilisations", // done
+        "spinal-manipulation" // done
       );
 
       $pageSEO = array(
@@ -77,6 +77,11 @@
     />
   
     <?php wp_head(); ?>
+    
+    <?php 
+   
+    if(get_site_url() === "https://dcphysiotherapy.ie"){?>
+      
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -142,6 +147,7 @@
       name="google-site-verification"
       content="Oj1OSoAT-s_6inxFhAXavR2FCQ8b1K6Q_bCLuhh2dPY"
     />
+      <?php } ?>
 
 
   </head>
