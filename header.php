@@ -8,20 +8,20 @@
     <?php 
 
       $portfolioPages = array(
-        "conditions-we-treat", 
-        "sciatica", 
-        "lumbar-disc-herniation",
-        "low-back-pain",
-        "bulging-discs",
-        "chronic-pain",
-        "degenerative-disc-disease",
-        "occupational-injuries",
-        "ankle-sprain",
-        "tendonitis",
-        "arthritis-osteoarthritis",
-        "sports-physiotherapy",
-        "whiplash",
-        "deep-tissue-massage",
+        "conditions-we-treat", // needs update
+        "sciatica", // done
+        "lumbar-disc-herniation", // done
+        "low-back-pain", // done
+        "bulging-discs", // done
+        "chronic-pain", // done
+        "degenerative-disc-disease", // done
+        "occupational-injuries", // done
+        "ankle-sprain", // done
+        "tendonitis", // done
+        "arthritis-osteoarthritis", // done
+        "sports-physiotherapy", // done
+        "whiplash", // done
+        "deep-tissue-massage", // done
         "dry-needling-trigger-point-therapy",
         "neck-pain",
         "spinal-mobilisations",
