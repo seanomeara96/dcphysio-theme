@@ -22,6 +22,18 @@ body {
 a {
   color: #ff782b;
 }
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+.footer__social svg {
+    height: 1.2rem;
+    width: 1rem;
+  }
+.footer__copyright {
+    text-align: center;
+  }
 @media (min-width: 800px) {
 .footer {
     display: flex;
@@ -93,6 +105,12 @@ a {
 .page-section--navy {
     background-color: #415061;
   }
+.page-section--blue {
+    background-color: #456796;
+  }
+.page-section--no-p {
+    padding: 0;
+  }
 .page-section--white {
     background-color: #fff;
   }
@@ -114,14 +132,21 @@ a {
   border-radius: 3px;
   display: inline-block;
   color: #fff;
-  padding: .65em;
+  padding: 0.65em;
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 }
+.button:hover {
+    background-color: gray;
+  }
 .button--large {
     text-transform: uppercase;
     font-size: 1.2rem;
+  }
+.button--blue {
+    background-color: #456796;
   }
 .hero {
   position: relative;
@@ -388,6 +413,12 @@ a {
 .rows > div {
     width: 100%;
   }
+.rows--no-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 @media (min-width: 600px) {
 .rows {
     display: flex;
@@ -395,6 +426,9 @@ a {
 }
     .rows > div {
       width: 50%;
+    }
+    .rows--no-block {
+      flex-direction: row;
     }
   }
 .rows--break-900 {
@@ -405,6 +439,9 @@ a {
       display: flex
   }
     }
+.rows--center {
+    justify-content: center;
+  }
 .generic-image picture,
   .generic-image img {
     width: 100%;
@@ -545,6 +582,7 @@ a {
     font-size: 0.5em;
   }
 .headline--normal {
+    line-height: 1.1;
     font-size: 1.7em;
   }
 .headline--blue {
@@ -760,5 +798,124 @@ a {
 }
 .icon--blue {
     background-color: #456796;
+  }
+.info-banner {
+  padding: 0.5rem;
+  display: none;
+}
+@media (min-width: 800px) {
+.info-banner {
+    display: block
+}
+  }
+.info-banner__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.info-banner {
+  background-color: #39464f;
+  color: #b7c9d4;
+}
+.info-banner__number a {
+    color: inherit;
+  }
+.info-banner__left {
+    display: flex;
+    gap: 1rem;
+  }
+.info-banner svg {
+    height: 1rem;
+    width: 2rem;
+  }
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+  padding: 4rem 2rem;
+  /*
+  &__form {
+    width: 100%;
+  }
+
+  &__form > div {
+    gap: 1rem;
+  }
+  &__form > div > input,
+  &__form > div > select {
+    width: 100%;
+  }
+  @media (min-width: 800px) {
+    &__form > div {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__form > div > input,
+    &__form > div > select {
+      width: 50%;
+    }
+  }
+  &__form input::placeholder {
+  }
+  &__form input,
+  &__form textarea,
+  &__form select {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+  }
+  &__form textarea {
+    width: 100%;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }*/
+}
+.booking-form h2 {
+    text-align: center;
+  }
+.booking-form .choices__list {
+    color: #000;
+  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 1rem;
+  margin: auto;
+  padding: 2rem 0;
+}
+.grid__img {
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+.grid__link {
+    text-decoration: none;
+    color: inherit;
+  }
+.grid__title {
+    text-transform: uppercase;
+    color: #3c3950;
+    font-weight: 700;
+  }
+.grid__divider {
+    background-color: #ff782bff;
+    height: 1px;
+    margin: 0.5rem 3rem;
+    width: 75%;
+  }
+.grid__content {
+    margin: 0;
+    padding: 0;
   }
 

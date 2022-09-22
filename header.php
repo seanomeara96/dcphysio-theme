@@ -152,6 +152,9 @@
 
   </head>
   <body>
+  <?php 
+      include 'info-banner.php'
+    ?>
     <nav class="nav page-section--small">
   <div class="nav__button"><div class="wrapper">&equiv;</div></div>
 
