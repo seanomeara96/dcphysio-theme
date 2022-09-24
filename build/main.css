@@ -153,6 +153,22 @@ a {
   height: 100vh;
   overflow: hidden;
 }
+.hero__details {
+    display: flex;
+
+    justify-content: end;
+    flex-direction: column;
+    gap: 2rem;
+  }
+.hero__details img {
+      height: 3.1rem;
+    }
+@media (min-width: 600px) {
+    .hero__details {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
 .hero__overlay {
     display: flex;
     flex-direction: column;

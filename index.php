@@ -18,8 +18,13 @@
             <h1 class="hero__header">
               Clondalkin`s highest independently google rated physio clinic
             </h1>
-            <div class="hero__button">
-              <a href="book-an-appointment/" class="button">Book an appointment</a>
+            <div class="hero__details">
+              <div class="hero__img-small">
+              <img src="https://dcphysiotherapy.ie/wp-content/uploads/2021/05/dc-google-reviews-logo.png" alt="Power by google">
+              </div>
+              <div class="hero__button">
+                <a href="/book-an-appointment/" class="button">Book an appointment</a>
+              </div>
             </div>
           </div>
         </div>

@@ -2,6 +2,22 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
+  &__details {
+    display: flex;
+
+    justify-content: end;
+    flex-direction: column;
+    gap: 2rem;
+    img {
+      height: 3.1rem;
+    }
+  }
+  @media (min-width: 600px) {
+    &__details {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
   &__overlay {
     display: flex;
     flex-direction: column;
