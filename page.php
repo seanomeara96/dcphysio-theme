@@ -3,30 +3,12 @@
 
 
     while(have_posts()){
-        the_post(); ?>
-
-            <!-- not adding this functionality -->
-            <!--<div>
-                <?php 
-                $theParent = wp_get_post_parent_ID(get_the_ID());    
-                if($theParent != 0){ ?>
-                    <p><a 
-                        href="<?php echo get_permalink($theParent); ?>"
-                        >Back to <?php echo get_the_title($theParent); ?>
-                    </a></p>
-                <?php } ?>
-
-                <p><?php the_title(); ?></p>
-            </div> -->
-        
-
-           <?php the_content(); ?>
-
-
-           
-        <?php
-
+        the_post();  
+        the_content();
     }
 
+
+    if(has_block("ourplugins/review-carousel")) include "reviews-carousel.php";
+    if(has_block("ourplugin/business-details")) include "business-details.php";
 
     get_footer();
