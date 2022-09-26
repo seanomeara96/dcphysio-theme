@@ -7,7 +7,7 @@
   width: 100%;
   z-index: 10;
   &__button {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     position: relative;
     z-index: 16;
     cursor: pointer;
@@ -15,12 +15,24 @@
     @media (min-width: 800px) {
       display: none;
     }
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__inner img {
+      height: 2.8rem;
+    }
   }
-  &__logo {
-    display: block;
+  &__logo--desktop {
+    display: none;
   }
+
   @media (min-width: 800px) {
-    &__logo {
+    &__logo--mobile {
+      display: none;
+    }
+    &__logo--desktop {
       display: block;
     }
     &__links .wrapper {
@@ -53,6 +65,7 @@
       padding: 0;
     }
     &__inner {
+      margin-top: 4rem;
       height: 100%;
       position: relative;
       padding: 0;

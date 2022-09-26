@@ -155,14 +155,27 @@
   <?php 
       include 'info-banner.php'
     ?>
-    <nav class="nav page-section--small">
-  <div class="nav__button"><div class="wrapper">&equiv;</div></div>
+    <nav class="nav page-section--small page-section--white">
+  <div class="nav__button"><div class="wrapper">
+    <div class="nav__button__inner">
+    <div class="nav__logo nav__logo--mobile">
+
+    <a href="<?php echo site_url('/'); ?>">
+          <img src="<?php echo get_theme_file_uri("/assets/images/logo-white.png"); ?>" alt="dcphysiotherapy logo" />
+        </a>
+
+    </div>
+    <div class="nav__button__icon">&equiv;</div>
+    </div>
+  </div></div>
+
+  <!--<div class="nav__button"><div class="wrapper">&equiv;</div></div>-->
 
   <div class="nav__links">
     <div class="wrapper">
-      <div class="nav__logo">
+      <div class="nav__logo nav__logo--desktop">
         <a href="<?php echo site_url('/'); ?>">
-          <img src="<?php echo get_theme_file_uri("/assets/images/logo-white.png"); ?>" alt="" />
+          <img src="<?php echo get_theme_file_uri("/assets/images/logo-white.png"); ?>" alt="dcphysiotherapy logo" />
         </a>
       </div>
       <ul class="nav__links__inner">
@@ -207,8 +220,8 @@
 </ul>
 
         </li>
-        <li class="nav__link <?php if($wp->request === "about") echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/about/'); ?>">About Us</a>
+        <li class="nav__link <?php if($wp->request === "about-us") echo "nav__link--active" ?>">
+          <a href="<?php echo site_url('/about-us/'); ?>">About Us</a>
         </li>
         <li class="nav__link <?php if($wp->request === "team") echo "nav__link--active" ?>">
           <a href="<?php echo site_url('/team/'); ?>">Team</a>
