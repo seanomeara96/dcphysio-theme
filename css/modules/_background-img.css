@@ -4,10 +4,11 @@
   height: 100%;
   width: 100%;
   img {
+    margin-left: -4rem;
     object-position: left;
     position: relative;
     object-fit: cover;
     height: 100%;
-    width: 100%;
+    width: calc(100% + 4rem);
   }
 }
