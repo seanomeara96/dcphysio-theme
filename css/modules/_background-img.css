@@ -11,4 +11,10 @@
     height: 100%;
     width: calc(100% + 4rem);
   }
+  @media(min-width: 800px){
+    img {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
 }

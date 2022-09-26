@@ -382,6 +382,12 @@ a {
     height: 100%;
     width: calc(100% + 4rem);
   }
+@media(min-width: 800px){
+    .background-img img {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
 .overlay {
   position: absolute;
   top: 0;
