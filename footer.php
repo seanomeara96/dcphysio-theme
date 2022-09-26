@@ -38,7 +38,7 @@
             </ul>
           </div>
           <div class="footer__copyright">
-            2021 © Copyrights <a href="/">DC Physiotherapy</a>
+            2022 © Copyrights <a href="/">DC Physiotherapy</a>
           </div>
         </div>
       </div>
