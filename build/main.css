@@ -637,6 +637,9 @@ a {
   color: gray;
   font-size: 1.3rem;
 }
+.checklist__link {
+    color: inherit;
+  }
 .checklist li {
     font-weight: 300;
     padding-bottom: 1em;

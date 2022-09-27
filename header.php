@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://dcphysiotherapy.ie/wp-content/uploads/2021/05/dc-physiotherapy-favicon.png">
     <?php 
 
       $portfolioPages = array(
         "conditions-we-treat", // needs update
-        "sciatica", // done
+        "sciatica", // donep
         "lumbar-disc-herniation", // done
         "low-back-pain", // done
         "bulging-discs", // done
@@ -53,7 +54,7 @@
         (object)array("url"=>"sciatica","title"=>"Sciatica - Best in Class Sciatica Treatment at DC Physiotherapy Dublin","description"=>"Sciatica can be very debilitating, DC physiotherapy in Dublin have a specialised treatment which is the most effective Non-Surgical treatment available, very high success rate."),
         (object)array("url"=>"whiplash","title"=>"Whiplash - Physio Clondalkin - DC Physio","description"=>"Whiplash is a very controversial condition, because there are many disputes about its existence but because of the way it is handled by the legal and medical system."),
         (object)array("url"=>"chronic-pain","title"=>"Chronic Pain - Physio Clondalkin - DC Physio","description"=>"Unfortunately, chronic pain is a dark reality for many people."),
-        (object)array("url"=>"about","title"=>"About Physiotherapy Clondalkin | DC Physiotherapy Clinic","description"=>"Physiotherapy Clondalkin is an expert Chartered Physiotherapy Clinic specializing in the treatment of Low Back and Neck Pain from a Disc Herniation or Sciatica."),
+        (object)array("url"=>"about-us","title"=>"About Physiotherapy Clondalkin | DC Physiotherapy Clinic","description"=>"Physiotherapy Clondalkin is an expert Chartered Physiotherapy Clinic specializing in the treatment of Low Back and Neck Pain from a Disc Herniation or Sciatica."),
       );
 
       function find_object_by_url($pageDetails, $searchURL){
@@ -156,7 +157,7 @@
       include 'info-banner.php'
     ?>
     <nav class="nav page-section--small">
-  <div class="nav__button"><div class="wrapper">&equiv;</div></div>
+  <div class="nav__button"><div class="wrapper" style="font-size: 2.2rem">&equiv;</div></div>
 
   <div class="nav__links">
     <div class="wrapper">
