@@ -6,8 +6,18 @@
     <section id="hero-banner" class="hero">
       <picture class="background-img">
         <source
+          type="image/webp"
           srcset="<?php echo get_theme_file_uri("/assets/images/dc-main-home-banner-desktop.webp"); ?>"
           media="(min-width: 800px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="<?php echo get_theme_file_uri("/assets/images/dc-main-home-banner-desktop.jpg"); ?>"
+          media="(min-width: 800px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="<?php echo get_theme_file_uri("/assets/images/dc-main-home-banner-for-mobile-3.jpg"); ?>"
         />
         <img src="<?php echo get_theme_file_uri("/assets/images/dc-main-home-banner-for-mobile-3.webp");?>" alt="" />
       </picture>
@@ -113,24 +123,8 @@
               </div>
             </div>
           </div>
-          <div class="colour-tile">
-    <div class="colour-tile__backdrop colour-tile__backdrop--orange"></div>
-    <div class="colour-tile__inner">
-      <h3 class="headline headline--orange">
-        <span class="headline--small">We</span><br />
-        specialize in:
-      </h3>
-      <ul class="colour-tile__section checklist">
-        <li>Low back pain</li>
-        <li>Bulging Discs</li>
-        <li>Sciatica</li>
-        <li>Sports Injury</li>
-        <li>Non-Surgical Spinal Decompression</li>
-        <li>Spinal Mobilisations</li>
-        <li>Chronic Pain</li>
-      </ul>
-    </div>
-  </div>
+
+          <?php include "we-specialize-in.php" ?>
   
         </div>
       </div>
@@ -196,24 +190,8 @@
     >
       <div class="wrapper">
         <div class="rows rows--break-900">
-          <div class="colour-tile">
-    <div class="colour-tile__backdrop colour-tile__backdrop--orange"></div>
-    <div class="colour-tile__inner">
-      <h3 class="headline headline--orange">
-        <span class="headline--small">We</span><br />
-        specialize in:
-      </h3>
-      <ul class="colour-tile__section checklist">
-        <li>Low back pain</li>
-        <li>Bulging Discs</li>
-        <li>Sciatica</li>
-        <li>Sports Injury</li>
-        <li>Non-Surgical Spinal Decompression</li>
-        <li>Spinal Mobilisations</li>
-        <li>Chronic Pain</li>
-      </ul>
-    </div>
-  </div>
+          
+        <?php include "we-specialize-in.php" ?>
   
           <div class="colour-tile">
             <div class="colour-tile__backdrop colour-tile__backdrop--blue"></div>
@@ -235,7 +213,7 @@
                 <li>Saturday 9:00 am – 6:00 pm</li>
                 <li>Sunday Closed</li>
               </ul>
-              <a href="#" class="button">Book an appointment</a>
+              <a href="/book-an-appointment/" class="button">Book an appointment</a>
             </div>
           </div>
         </div>

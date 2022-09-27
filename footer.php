@@ -27,7 +27,7 @@
           <div class="footer__pages">
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/treated-conditions">Conditions we Treat</a></li>
+              <li><a href="/conditions-we-treat/">Conditions we Treat</a></li>
               <li>
                 <a href="/non-surgical-spinal-decompression">Non-Surgical Spinal Decompression</a>
               </li>
@@ -38,7 +38,7 @@
             </ul>
           </div>
           <div class="footer__copyright">
-            2021 © Copyrights <a href="/">DC Physiotherapy</a>
+            2022 © Copyrights <a href="/">DC Physiotherapy</a>
           </div>
         </div>
       </div>

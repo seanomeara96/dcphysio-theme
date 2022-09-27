@@ -169,6 +169,11 @@
         <li class="nav__link <?php if($wp->request === "") echo "nav__link--active" ?>">
           <a href="<?php echo site_url('/'); ?>">Home</a>
         </li>
+        <li class="nav__link <?php if($wp->request === "non-surgical-spinal-decompression") echo "nav__link--active" ?>">
+          <a href="<?php echo site_url('/non-surgical-spinal-decompression/'); ?>"
+            >Non-Surgical Spinal Decompression</a
+          >
+        </li>
         <li class="nav__link  <?php if(in_array($wp->request, $portfolioPages)) echo "nav__link--active" ?>">
           <a href="<?php echo site_url('/conditions-we-treat/'); ?>">Conditions we Treat</a>
           <ul class="nav__sub-menu">
@@ -201,12 +206,6 @@
   <li><a href="<?php echo site_url('/spinal-manipulation/'); ?>">Spinal Manipulation</a></li>
 </ul>
 
-        </li>
-
-        <li class="nav__link <?php if($wp->request === "non-surgical-spinal-decompression") echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/non-surgical-spinal-decompression/'); ?>"
-            >Non-Surgical Spinal Decompression</a
-          >
         </li>
         <li class="nav__link <?php if($wp->request === "about") echo "nav__link--active" ?>">
           <a href="<?php echo site_url('/about/'); ?>">About Us</a>
