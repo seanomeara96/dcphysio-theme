@@ -6,8 +6,18 @@
     <section id="hero-banner" class="hero">
       <picture class="background-img">
         <source
+          type="image/webp"
           srcset="<?php echo get_theme_file_uri("/assets/images/dc-main-home-banner-desktop.webp"); ?>"
           media="(min-width: 800px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="<?php echo get_theme_file_uri("/assets/images/dc-main-home-banner-desktop.jpg"); ?>"
+          media="(min-width: 800px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="<?php echo get_theme_file_uri("/assets/images/dc-main-home-banner-for-mobile-3.jpg"); ?>"
         />
         <img src="<?php echo get_theme_file_uri("/assets/images/dc-main-home-banner-for-mobile-3.webp");?>" alt="" />
       </picture>

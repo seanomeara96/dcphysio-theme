@@ -5,27 +5,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://dcphysiotherapy.ie/wp-content/uploads/2021/05/dc-physiotherapy-favicon.png">
     <?php 
 
       $portfolioPages = array(
-        "conditions-we-treat", // needs update
-        "sciatica", // done
-        "lumbar-disc-herniation", // done
-        "low-back-pain", // done
-        "bulging-discs", // done
-        "chronic-pain", // done
-        "degenerative-disc-disease", // done
-        "occupational-injuries", // done
-        "ankle-sprain", // done
-        "tendonitis", // done
-        "arthritis-osteoarthritis", // done
-        "sports-physiotherapy", // done
-        "whiplash", // done
-        "deep-tissue-massage", // done
-        "dry-needling-trigger-point-therapy", // done
-        "neck-pain", // done
-        "spinal-mobilisations", // done
-        "spinal-manipulation" // done
+        "conditions-we-treat",
+        "sciatica",
+        "lumbar-disc-herniation",
+        "low-back-pain",
+        "bulging-discs",
+        "chronic-pain",
+        "degenerative-disc-disease",
+        "occupational-injuries",
+        "ankle-sprain",
+        "tendonitis",
+        "arthritis-osteoarthritis",
+        "sports-physiotherapy",
+        "whiplash",
+        "deep-tissue-massage",
+        "dry-needling-trigger-point-therapy",
+        "neck-pain",
+        "spinal-mobilisations",
+        "spinal-manipulation"
       );
 
       $pageSEO = array(
@@ -53,7 +54,7 @@
         (object)array("url"=>"sciatica","title"=>"Sciatica - Best in Class Sciatica Treatment at DC Physiotherapy Dublin","description"=>"Sciatica can be very debilitating, DC physiotherapy in Dublin have a specialised treatment which is the most effective Non-Surgical treatment available, very high success rate."),
         (object)array("url"=>"whiplash","title"=>"Whiplash - Physio Clondalkin - DC Physio","description"=>"Whiplash is a very controversial condition, because there are many disputes about its existence but because of the way it is handled by the legal and medical system."),
         (object)array("url"=>"chronic-pain","title"=>"Chronic Pain - Physio Clondalkin - DC Physio","description"=>"Unfortunately, chronic pain is a dark reality for many people."),
-        (object)array("url"=>"about","title"=>"About Physiotherapy Clondalkin | DC Physiotherapy Clinic","description"=>"Physiotherapy Clondalkin is an expert Chartered Physiotherapy Clinic specializing in the treatment of Low Back and Neck Pain from a Disc Herniation or Sciatica."),
+        (object)array("url"=>"about-us","title"=>"About Physiotherapy Clondalkin | DC Physiotherapy Clinic","description"=>"Physiotherapy Clondalkin is an expert Chartered Physiotherapy Clinic specializing in the treatment of Low Back and Neck Pain from a Disc Herniation or Sciatica."),
       );
 
       function find_object_by_url($pageDetails, $searchURL){
@@ -153,86 +154,7 @@
   </head>
   <body>
   <?php 
-      include 'info-banner.php'
+      include 'info-banner.php';
+      include 'nav.php';
     ?>
-    <nav class="nav page-section--small page-section--white">
-  <div class="nav__button"><div class="wrapper">
-    <div class="nav__button__inner">
-    <div class="nav__logo nav__logo--mobile">
-
-    <a href="<?php echo site_url('/'); ?>">
-          <img src="<?php echo get_theme_file_uri("/assets/images/logo-white.png"); ?>" alt="dcphysiotherapy logo" />
-        </a>
-
-    </div>
-    <div class="nav__button__icon">&equiv;</div>
-    </div>
-  </div></div>
-
-  <!--<div class="nav__button"><div class="wrapper">&equiv;</div></div>-->
-
-  <div class="nav__links">
-    <div class="wrapper">
-      <div class="nav__logo nav__logo--desktop">
-        <a href="<?php echo site_url('/'); ?>">
-          <img src="<?php echo get_theme_file_uri("/assets/images/logo-white.png"); ?>" alt="dcphysiotherapy logo" />
-        </a>
-      </div>
-      <ul class="nav__links__inner">
-        <li class="nav__link <?php if($wp->request === "") echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/'); ?>">Home</a>
-        </li>
-        <li class="nav__link <?php if($wp->request === "non-surgical-spinal-decompression") echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/non-surgical-spinal-decompression/'); ?>"
-            >Non-Surgical Spinal Decompression</a
-          >
-        </li>
-        <li class="nav__link  <?php if(in_array($wp->request, $portfolioPages)) echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/conditions-we-treat/'); ?>">Conditions we Treat</a>
-          <ul class="nav__sub-menu">
-  <li><a href="<?php echo site_url('/sciatica/'); ?>">Sciatica</a></li>
-  <li>
-    <a href="<?php echo site_url('/lumbar-disc-herniation/'); ?>">Lumbar Disc Herniation</a>
-  </li>
-  <li><a href="<?php echo site_url('/low-back-pain/'); ?>">Low Back Pain</a></li>
-  <li><a href="<?php echo site_url('/bulging-discs/'); ?>">Bulging Discs</a></li>
-  <li><a href="<?php echo site_url('/chronic-pain/'); ?>">Chronic Pain</a></li>
-  <li>
-    <a href="<?php echo site_url('/degenerative-disc-disease/'); ?>">Degenerative Disc Disease</a>
-  </li>
-  <li><a href="<?php echo site_url('/occupational-injuries/'); ?>">Occupational Injuries</a></li>
-  <li><a href="<?php echo site_url('/ankle-sprain/'); ?>">Ankle Sprain</a></li>
-  <li><a href="<?php echo site_url('/tendonitis/'); ?>">Tendonitis</a></li>
-  <li>
-    <a href="<?php echo site_url('/arthritis-osteoarthritis/'); ?>">Arthritis | Osteoarthritis</a>
-  </li>
-  <li><a href="<?php echo site_url('/sports-physiotherapy/'); ?>">Sports Physiotherapy</a></li>
-  <li><a href="<?php echo site_url('/whiplash/'); ?>">Whiplash</a></li>
-  <li><a href="<?php echo site_url('/deep-tissue-massage/'); ?>">Deep Tissue Massage</a></li>
-  <li>
-    <a href="<?php echo site_url('/dry-needling-trigger-point-therapy/'); ?>"
-      >Dry Needling Trigger Point Therapy</a
-    >
-  </li>
-  <li><a href="<?php echo site_url('/neck-pain/'); ?>">Neck Pain</a></li>
-  <li><a href="<?php echo site_url('/spinal-mobilisations/'); ?>">Spinal Mobilisations</a></li>
-  <li><a href="<?php echo site_url('/spinal-manipulation/'); ?>">Spinal Manipulation</a></li>
-</ul>
-
-        </li>
-        <li class="nav__link <?php if($wp->request === "about-us") echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/about-us/'); ?>">About Us</a>
-        </li>
-        <li class="nav__link <?php if($wp->request === "team") echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/team/'); ?>">Team</a>
-        </li>
-        <li class="nav__link <?php if($wp->request === "pricing") echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/pricing/'); ?>">Pricing</a>
-        </li>
-        <li class="nav__link <?php if($wp->request === "contact") echo "nav__link--active" ?>">
-          <a href="<?php echo site_url('/contact/'); ?>">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    

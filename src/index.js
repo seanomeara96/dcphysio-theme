@@ -1,9 +1,16 @@
 function addNavToggle() {
   const body = document.querySelector("body");
+  const navSctn = document.querySelector(".nav");
   const navBtn = document.querySelector(".nav__button");
-  const navLinks = document.querySelector(".nav__links");
+  const navLinks = document.querySelector(".nav__lower");
   navBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("nav__links--is-open");
+    const openClass = "nav__lower--is-open";
+    navLinks.classList.toggle(openClass);
+    navSctn.classList.toggle("nav--no-overflow");
+    console.log(navLinks.classList);
+    [...navLinks.classList].includes(openClass)
+      ? (navBtn.innerHTML = "&times;")
+      : (navBtn.innerHTML = "&equiv;");
     body.classList.toggle("no-scroll");
   });
 }
