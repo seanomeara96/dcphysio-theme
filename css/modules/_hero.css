@@ -41,16 +41,16 @@
     }
     overflow-wrap: break-word;
   }
-&__header--desktop {
-  display: none;
-}
-@media (min-width: 600px){
   &__header--desktop {
-    display: inline;
-  }
-  &__header--mobile {
     display: none;
   }
-}
-
+  @media (min-width: 600px) {
+    &__header--desktop {
+      display: inline;
+    }
+    &__header--mobile {
+      display: none;
+      text-align: left !important;
+    }
+  }
 }

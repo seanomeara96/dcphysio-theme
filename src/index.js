@@ -7,7 +7,6 @@ function addNavToggle() {
     const openClass = "nav__lower--is-open";
     navLinks.classList.toggle(openClass);
     navSctn.classList.toggle("nav--no-overflow");
-    console.log(navLinks.classList);
     [...navLinks.classList].includes(openClass)
       ? (navBtn.innerHTML = "&times;")
       : (navBtn.innerHTML = "&equiv;");
