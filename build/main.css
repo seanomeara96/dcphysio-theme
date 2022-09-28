@@ -155,7 +155,7 @@ a {
 }
 .hero__details {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: column;
     gap: 2rem;
   }
@@ -180,7 +180,6 @@ a {
     position: relative;
     max-width: 600px;
     float: right;
-    text-align: right;
   }
 .hero__header {
     line-height: 1.8;
@@ -200,6 +199,9 @@ a {
     display: none;
   }
 @media (min-width: 600px) {
+    .hero__inner {
+      text-align: right;
+    }
     .hero__header--desktop {
       display: inline;
     }
