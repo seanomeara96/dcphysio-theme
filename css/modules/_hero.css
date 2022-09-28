@@ -11,6 +11,7 @@
       height: 3.1rem;
     }
   }
+  
   @media (min-width: 600px) {
     &__details {
       align-items: center;
@@ -29,6 +30,7 @@
     position: relative;
     max-width: 600px;
     float: right;
+    text-align: right;
   }
   &__header {
     line-height: 1.8;
@@ -44,15 +46,19 @@
     display: none;
   }
   @media (min-width: 600px) {
-    &__inner {
-      text-align: right;
-    }
+    
     &__header--desktop {
       display: inline;
     }
     &__header--mobile {
       display: none;
       text-align: left !important;
+    }
+  }
+   &__header--mobile {
+    text-align: left;
+    span {
+      line-height: 1.8;
     }
   }
 }

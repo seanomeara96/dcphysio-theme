@@ -27,7 +27,7 @@
           <div class="hero__inner">
             <h1 class="hero__header">
               <span class="hero__header--desktop">Clondalkin`s highest independently google rated physio clinic</span>
-              <span class="hero__header--mobile">Resolve Low Back and Neck Pain Fast</span>
+              <div class="hero__header--mobile"><span>Resolve Low Back and Neck Pain Fast</span></div>
             </h1>
             <div class="hero__details">
               <div class="hero__img-small">
