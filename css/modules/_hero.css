@@ -61,4 +61,7 @@
       line-height: 1.8;
     }
   }
+  &__img-small {
+    margin-bottom: 1rem;
+  }
 }

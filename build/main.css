@@ -213,6 +213,9 @@ a {
 .hero__header--mobile span {
       line-height: 1.8;
     }
+.hero__img-small {
+    margin-bottom: 1rem;
+  }
 .nav {
   font-size: 1.2rem;
   position: fixed;
