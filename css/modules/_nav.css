@@ -9,6 +9,7 @@
   z-index: 99999;
   color: #424040;
   &--no-overflow {
+    position: sticky;
     overflow-y: hidden;
   }
   a {
@@ -66,7 +67,9 @@
   &__links {
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 0.6rem;
+  }
+  &__link {
+    padding-bottom: .8rem;
   }
   @media (min-width: 800px) {
     padding: 0.4rem 2rem;
@@ -96,6 +99,7 @@
       overflow-y: visible;
     }
     &__link {
+      padding-bottom: 0;
       position: relative;
       &--active > a {
         color: $orange;

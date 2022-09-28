@@ -138,12 +138,12 @@
   
     <section
       id="pain-points"
-      class="page-section page-section--full-height page-section--no-p"
+      class="page-section page-section--no-p"
     >
-      <picture class="background-img">
+      <picture class="pain-points__background-img">
         <img loading="lazy" src="<?php echo get_theme_file_uri("/assets/images/dc-home-banner-2.jpg"); ?>" alt="" />
       </picture>
-      <div class="overlay overlay--dark-blue">
+      <div class="pain-points__overlay">
         <div class="wrapper wrapper--full-height">
           <div class="pain-points">
             <div class="pain-points__inner">
