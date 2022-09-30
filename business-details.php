@@ -8,10 +8,10 @@
     </div>
     <div class="business-details__info">
       <div class="business-details__summary">
-        <!--<img src="" alt="logo" />-->
+        <img loading="lazy" src="https://dcphysiotherapy.ie/wp-content/uploads/2021/05/physio_clondalkin.png" alt="logo" />
         <p>
           DC Physiotherapy Clondalkin have a keen interest in human movement
-          with particular focus on Spinal problems associated with Low Back and
+          with particular focus on Spinal problems associated with Lower Back and
           Neck Pain from spinal disc issues..
         </p>
       </div>

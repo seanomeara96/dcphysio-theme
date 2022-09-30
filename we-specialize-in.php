@@ -3,7 +3,7 @@
     <div class="colour-tile__inner">
       <h3 class="headline headline--orange">
         <span class="headline--small">We</span><br />
-        specialize in:
+        specialise in:
       </h3>
       <ul class="colour-tile__section checklist">
         <li><a class="checklist__link" style="color: inherit;" href="/low-back-pain/">Low back pain</a></li>

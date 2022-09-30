@@ -1,6 +1,7 @@
 
 <?php 
-    get_header(); ?>
+    get_header(); 
+?>
 
     <main>
     <section id="hero-banner" class="hero">
@@ -156,9 +157,9 @@
               </h3>
               <ul>
                 <li class="pain-points__item">
-                  <h4>Low Back Pain</h4>
+                  <h4>Lower Back Pain</h4>
                   <p>
-                    We specialise in treating low back pain. Physiotherapists in
+                    We specialise in treating lower back pain. Physiotherapists in
                     our Physio Clondalkin are chartered and are experts in their
                     field.
                   </p>
@@ -175,7 +176,7 @@
                   <h4>Non-Surgical Spinal Decompression</h4>
                   <p>
                     Non-Surgical Spinal Decompression Therapy is a revolutionary
-                    treatment for Low Back and Neck Pain.
+                    treatment for Lower Back and Neck Pain.
                   </p>
                 </li>
               </ul>
@@ -209,8 +210,8 @@
   
               <strong>Opening hours</strong>
               <ul class="table table--grey">
-                <li>Monday – Friday 8:00 am – 8:00 pm</li>
-                <li>Saturday 9:00 am – 6:00 pm</li>
+                <li>Monday - Friday 8:00 am - 8:00 pm</li>
+                <li>Saturday 9:00 am - 6:00 pm</li>
                 <li>Sunday Closed</li>
               </ul>
               <a href="/book-an-appointment/" class="button">Book an appointment</a>
@@ -220,14 +221,12 @@
       </div>
     </section>
     <!--map begin-->
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9534.66290150727!2d-6.3900619!3d53.3134326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6b1399ec83b54a8!2sPhysio%20Clondalkin%20-%20DC%20Physiotherapy!5e0!3m2!1sen!2sie!4v1645729366162!5m2!1sen!2sie"
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1417.3217488733253!2d-6.3906134284587495!3d53.31386542168281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6b1399ec83b54a8!2sPhysio%20Clondalkin%20-%20DC%20Physiotherapy!5e0!3m2!1sen!2sie!4v1664538432741!5m2!1sen!2sie"
       width="100%"
       height="450"
       style="border: 0"
       allowfullscreen=""
-      loading="lazy"
-    ></iframe>
+      loading="lazy"></iframe>
     <!--map end-->
   </main>
 
