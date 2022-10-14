@@ -79,4 +79,8 @@ addNavToggle();
 startTestimonialSlides();
 truncateReviews();
 applyDisplayStateToggles();
-subMenuToggle();
+/**
+ * adding this event listener because the click event listener isn't being added
+ * to the sub menu button on the conditions we treat page
+ */
+window.addEventListener("DOMContentLoaded", subMenuToggle);
