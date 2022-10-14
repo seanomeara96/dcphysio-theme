@@ -57,19 +57,32 @@
     width: 100%;
     padding: 1rem 2rem;
   }
-  & &__sub-menu {
+  &__sub-menu {
+    height: 0;
+    overflow: hidden;
     font-size: 1.1rem;
     padding-left: 1rem;
     li {
       padding: 0.2rem 0;
     }
   }
+   &__sub-menu__toggle-btn {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  &__sub-menu--is-open {
+    height: auto;
+  }
+  &__sub-menu-link {
+    display: flex;
+    justify-content: space-between;
+  }
   &__links {
     flex-direction: column;
-    justify-content: space-evenly;
   }
   &__link {
-    padding-bottom: .8rem;
+    padding-bottom: 0.8rem;
   }
   @media (min-width: 800px) {
     padding: 0.4rem 2rem;
@@ -125,6 +138,9 @@
     }
     &--no-overflow {
       overflow-y: visible;
+    }
+    &__sub-menu__toggle-btn {
+      display: none;
     }
   }
 }

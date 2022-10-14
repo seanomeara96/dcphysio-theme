@@ -17,7 +17,12 @@
             <a href="<?php echo site_url('/non-surgical-spinal-decompression/'); ?>">Non-Surgical Spinal Decompression</a>
         </li>
         <li class="nav__link  <?php if(in_array($wp->request, $portfolioPages)) echo "nav__link--active" ?>">
-            <a href="<?php echo site_url('/conditions-we-treat/'); ?>">Conditions we Treat</a>
+            <div class="nav__sub-menu-link">
+                <a href="<?php echo site_url('/conditions-we-treat/'); ?>">Conditions We Treat</a>
+                <span class="nav__sub-menu__toggle-btn">
+                    &plus;
+                </span>
+            </div>
             <ul class="nav__sub-menu">
                 <li><a href="<?php echo site_url('/sciatica/'); ?>">Sciatica</a></li>
                 <li><a href="<?php echo site_url('/lumbar-disc-herniation/'); ?>">Lumbar Disc Herniation</a></li>

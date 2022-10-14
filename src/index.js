@@ -14,6 +14,17 @@ function addNavToggle() {
   });
 }
 
+function subMenuToggle() {
+  const subMenu = document.querySelector(".nav__sub-menu");
+  const subMenuToggleBtn = document.querySelector(".nav__sub-menu__toggle-btn");
+  subMenuToggleBtn.addEventListener("click", () => {
+    subMenu.classList.toggle("nav__sub-menu--is-open");
+    [...subMenu.classList].includes("nav__sub-menu--is-open")
+      ? (subMenuToggleBtn.innerHTML = "&minus;")
+      : (subMenuToggleBtn.innerHTML = "&plus;");
+  });
+}
+
 function startTestimonialSlides() {
   const slideSelector = ".carousel__slide";
   const isVisibleClassName = "carousel__slide--is-visible";
@@ -21,7 +32,7 @@ function startTestimonialSlides() {
   const slides = testimonialSection.querySelectorAll(slideSelector);
   function nextSlide(count = 0) {
     slides.forEach((slide) => slide.classList.remove(isVisibleClassName));
-    //const previousSlide = count > 0 ? (count - 1) : (slides.length - 1);
+    // const previousSlide = count > 0 ? (count - 1) : (slides.length - 1);
     const nextSlideIdx = count < slides.length - 1 ? count + 1 : 0;
     slides[count].classList.add(isVisibleClassName);
     setTimeout(() => nextSlide(nextSlideIdx), 10000);
@@ -68,3 +79,4 @@ addNavToggle();
 startTestimonialSlides();
 truncateReviews();
 applyDisplayStateToggles();
+subMenuToggle();
