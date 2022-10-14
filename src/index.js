@@ -29,6 +29,7 @@ function startTestimonialSlides() {
   const slideSelector = ".carousel__slide";
   const isVisibleClassName = "carousel__slide--is-visible";
   const testimonialSection = document.querySelector("#testimonials");
+  if (!testimonialSection) return;
   const slides = testimonialSection.querySelectorAll(slideSelector);
   function nextSlide(count = 0) {
     slides.forEach((slide) => slide.classList.remove(isVisibleClassName));
@@ -45,6 +46,8 @@ function showContent(e, content) {
 }
 
 function truncateReviews() {
+  const reviewSection = document.querySelector("#reviews-specialties");
+  if (!reviewSection) return;
   const reviews = document.querySelectorAll("#reviews-specialties .review");
   console.log(reviews);
   reviews.forEach((review) => {
@@ -61,26 +64,22 @@ function truncateReviews() {
 }
 
 function applyDisplayStateToggles() {
+  const details = document.querySelectorAll(".details");
+  if (!details) return;
   function toggleDisplayState(element) {
     element.classList.toggle("details__body--is-open");
   }
-  document
-    .querySelectorAll(".details")
-    .forEach((item) =>
-      item
-        .querySelector(".details__summary")
-        .addEventListener("click", () =>
-          toggleDisplayState(item.querySelector(".details__body"))
-        )
-    );
+  details.forEach((item) =>
+    item
+      .querySelector(".details__summary")
+      .addEventListener("click", () =>
+        toggleDisplayState(item.querySelector(".details__body"))
+      )
+  );
 }
 
 addNavToggle();
+subMenuToggle();
 startTestimonialSlides();
 truncateReviews();
 applyDisplayStateToggles();
-/**
- * adding this event listener because the click event listener isn't being added
- * to the sub menu button on the conditions we treat page
- */
-window.addEventListener("DOMContentLoaded", subMenuToggle);

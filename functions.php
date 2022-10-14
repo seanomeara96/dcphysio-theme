@@ -1,8 +1,8 @@
 <?php
 
     function dcphysio_files(){
-        wp_enqueue_script("main_script", get_theme_file_uri("/build/main.js"), NULL, "1.51", true);
-        wp_enqueue_style("main_styles", get_theme_file_uri("/build/main.css"), array(), "7.51");
+        wp_enqueue_script("main_script", get_theme_file_uri("/build/main.js"), NULL, "1.53", true);
+        wp_enqueue_style("main_styles", get_theme_file_uri("/build/main.css"), array(), "7.53");
        // ? use something like this? //wp_enqueue_style("main_styles", get_theme_file_uri("/build/main.css"), array(), filemtime(get_theme_file_uri("/build/main.css")), false);
     }
 
