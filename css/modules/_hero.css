@@ -57,6 +57,8 @@
   }
    &__header--mobile {
     margin-top: -6rem;
+    font-weight: 900;
+    text-shadow: 2px 0px 4px rgb(66 68 90 / 63%);
     text-align: left;
     span {
       line-height: 1.8;
