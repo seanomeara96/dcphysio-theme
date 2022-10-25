@@ -66,10 +66,14 @@
               >
               <div class="colour-tile__section">
                 <div class="review">
-                  <div class="review__avatar">C</div>
+                  <div class="review__meta-details">
+                    <div class="review__avatar">C</div>
+                    <div>
+                      <div class="review__author"><strong>Ciara B</strong></div>
+                      <div class="review__rating">★★★★★</div>
+                    </div>
+                  </div>
                   <div class="review__details">
-                    <div class="review__author"><strong>Ciara B</strong></div>
-                    <div class="review__rating">★★★★★</div>
                     <div class="review__content">
                       Last month, I developed an injury while playing football and
                       decided to go see a physio as I was not able to do simple
@@ -81,10 +85,14 @@
                   </div>
                 </div>
                 <div class="review">
-                  <div class="review__avatar">M</div>
+                  <div class="review__meta-details">
+                    <div class="review__avatar">M</div>
+                    <div>
+                      <div class="review__author"><strong>Michael L</strong></div>
+                      <div class="review__rating">★★★★★</div>
+                    </div>
+                  </div>
                   <div class="review__details">
-                    <div class="review__author"><strong>Michael L</strong></div>
-                    <div class="review__rating">★★★★★</div>
                     <div class="review__content">
                       I had a neck problem with a disc protruding giving me huge
                       discomfort. My Doctor said there was nothing they could do
@@ -99,12 +107,16 @@
                   </div>
                 </div>
                 <div class="review">
-                  <div class="review__avatar">L</div>
-                  <div class="review__details">
-                    <div class="review__author">
-                      <strong>Lucy Murphy P</strong>
+                  <div class="review__meta-details">
+                    <div class="review__avatar">L</div>
+                    <div>
+                      <div class="review__author">
+                        <strong>Lucy Murphy P</strong>
+                      </div>
+                      <div class="review__rating">★★★★★</div>
                     </div>
-                    <div class="review__rating">★★★★★</div>
+                  </div>
+                  <div class="review__details">
                     <div class="review__content">
                       After trying other physios and every drug under the sun, I
                       searched for an alternative treatment for the severe pain my

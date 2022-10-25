@@ -25,7 +25,7 @@
       </div>
       <div class="business-details__working-hours">
         <h3>Working Hours</h3>
-        Monday-Friday: 8:00 am – 8:00 pm Saturday: 9:00 am – 6:00 pm Sunday:
+        Monday-Friday: 8:00 am - 8:00 pm Saturday: 9:00 am - 6:00 pm Sunday:
         Closed
       </div>
     </div>

@@ -1,9 +1,12 @@
 .review {
-  display: flex;
-  gap: 1rem;
   max-width: 800px;
   margin: auto;
   margin-bottom: 2rem;
+  &__meta-details{
+    display: flex; 
+    gap: 1rem;
+    margin-bottom: .8rem;
+  }
   /*
   not a very descriptive name
   */
