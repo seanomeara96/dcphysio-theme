@@ -1,5 +1,6 @@
 
 <?php 
+    include "review-data.php";
     get_header(); 
 ?>
 
@@ -65,74 +66,42 @@
                 5.0 <span class="review__rating">★★★★★</span> 86 reviews</span
               >
               <div class="colour-tile__section">
+                <?php 
+                  $tile_testimonials = random_reviews($review_data, 3);
+                  foreach($tile_testimonials as $testimonial){
+                    if(is_null($testimonial)){
+                      continue;
+                    } ?>
+
                 <div class="review">
                   <div class="review__meta-details">
-                    <div class="review__avatar">C</div>
+                    <div class="review__avatar">
+                      <img style="
+                        height: 100%; 
+                        width: 100%; 
+                        object-position: center; 
+                        object-fit: cover;
+                      "  src="<?php echo $testimonial->img_src ?>" alt="">
+                    </div>
                     <div>
-                      <div class="review__author"><strong>Ciara B</strong></div>
-                      <div class="review__rating">★★★★★</div>
+                      <div class="review__author"><strong><?php echo $testimonial->author ?></strong></div>
+                      <div class="review__rating"><?php echo $testimonial->rating ?></div>
                     </div>
                   </div>
                   <div class="review__details">
                     <div class="review__content">
-                      Last month, I developed an injury while playing football and
-                      decided to go see a physio as I was not able to do simple
-                      daily tasks of my own. Fortunately, a friend recommended
-                      physiotherapy Clondalkin and I'm so grateful to him for that
-                      now. My body has fully recovered after only a few sessions.
-                      Good Job guys!
+                    <?php echo $testimonial->text ?>
                     </div>
                   </div>
-                </div>
-                <div class="review">
-                  <div class="review__meta-details">
-                    <div class="review__avatar">M</div>
-                    <div>
-                      <div class="review__author"><strong>Michael L</strong></div>
-                      <div class="review__rating">★★★★★</div>
-                    </div>
-                  </div>
-                  <div class="review__details">
-                    <div class="review__content">
-                      I had a neck problem with a disc protruding giving me huge
-                      discomfort. My Doctor said there was nothing they could do
-                      but surgery, which may not work. I researched myself and
-                      found DC physiotherapy. Dave was amazing he talked me
-                      through the procedure and after a number of sessions, I was
-                      back in the gym and playing basketball again. A totally
-                      amazing result. Dave was so knowledgeable and I have never
-                      looked back. Had one or two maintenance session since, but
-                      all is perfect now. Could not recommend him highly enough.
-                    </div>
-                  </div>
-                </div>
-                <div class="review">
-                  <div class="review__meta-details">
-                    <div class="review__avatar">L</div>
-                    <div>
-                      <div class="review__author">
-                        <strong>Lucy Murphy P</strong>
-                      </div>
-                      <div class="review__rating">★★★★★</div>
-                    </div>
-                  </div>
-                  <div class="review__details">
-                    <div class="review__content">
-                      After trying other physios and every drug under the sun, I
-                      searched for an alternative treatment for the severe pain my
-                      herniated discs were causing me. After a 30 min consultation
-                      with Robbie, I felt assured that he knew what he was talking
-                      about. We started a 10 session course of spinal
-                      decompression. The treatment itself was very comfortable,
-                      and I loved that it was treating the issue, rather than the
-                      symptoms. I started right after a 3 week long back spasm
-                      where I couldn't stand up or put my shoes on without help,
-                      and I am now pain free. I want to thank Robbie, Kane, and
-                      David for their help and welcoming environment throughout my
-                      course of treatment, and I would recommend this to anyone.
-                    </div>
-                  </div>
-                </div>
+               </div>
+
+                 <?php }
+                ?>
+              
+              
+
+
+                
               </div>
             </div>
           </div>
@@ -144,7 +113,7 @@
     </section>
     
     <?php 
-      include 'testimonials.php'
+      include 'reviews-carousel.php'
     ?>
 
   
