@@ -49,7 +49,6 @@ function truncateReviews() {
   const reviewSection = document.querySelector("#reviews-specialties");
   if (!reviewSection) return;
   const reviews = document.querySelectorAll("#reviews-specialties .review");
-  console.log(reviews);
   reviews.forEach((review) => {
     const reviewElem = review.querySelector(".review__content");
     const content = reviewElem.innerHTML;
@@ -61,6 +60,20 @@ function truncateReviews() {
       reviewElem.innerHTML = content;
     });
   });
+}
+
+function truncateTestimonialSlides(){
+  const carousel = document.querySelector("#testimonials");
+  if(!carousel) return;
+  const reviews = carousel.querySelectorAll(".review");
+  if(!reviews) return;
+  reviews.forEach(review => {
+    const textSection = review.querySelector(".review__content");
+    const content = textSection.textContent.trim();
+    if(content.length < 660) return;
+    const updatedContent = content.substring(0, 660) + "<a href=\"https://www.google.com/search?hl=en-IE&gl=ie&q=Physio+Clondalkin+-+DC+Physiotherapy,+Newlands+Business+Park,+4,+Clondalkin,+Co.+Dublin&ludocid=482229989232301224&lsig=AB86z5XUxHOv8rN-BBM8rBi8R-Ow#lrd=0x486772d8c7e54cc3:0x6b1399ec83b54a8,1\">...</a>";
+    textSection.innerHTML = updatedContent;
+  })
 }
 
 function applyDisplayStateToggles() {
@@ -82,4 +95,5 @@ addNavToggle();
 subMenuToggle();
 startTestimonialSlides();
 truncateReviews();
+truncateTestimonialSlides();
 applyDisplayStateToggles();

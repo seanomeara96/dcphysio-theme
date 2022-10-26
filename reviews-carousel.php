@@ -1,5 +1,3 @@
-
-
 <section id="testimonials" class="page-section" style="min-height: 500px">
   <div class="wrapper">
     <h2 class="headline headline--center">
@@ -7,19 +5,13 @@
       say about us
     </h2>
     <div class="carousel">
-    <?php $testimonials = random_reviews($review_data, 3); 
-      
-      foreach($testimonials as $testimonial){ 
-        
+    <?php
+    $testimonials = random_reviews($review_data, 3);       
+      foreach($testimonials as $testimonial){
         if(is_null($testimonial)){
           continue;
         }
-
-
         ?>
-
-      
-
       <div class="review review--no-flex review--spaced carousel__slide carousel__slide--is-visible">
         <div class="review__avatar">
           <img 

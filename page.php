@@ -1,6 +1,8 @@
 <?php
     get_header();
 
+    include "review-data.php";
+
 
     while(have_posts()){
         the_post();  

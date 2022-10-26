@@ -1,7 +1,7 @@
 
-<?php 
-    include "review-data.php";
+<?php
     get_header(); 
+    include "review-data.php";
 ?>
 
     <main>
@@ -28,7 +28,7 @@
         <div class="wrapper">
           <div class="hero__inner">
             <h1 class="hero__header">
-              <span class="hero__header--desktop">Clondalkin`s highest independently google rated physio clinic</span>
+              <span class="hero__header--desktop">Resolve <br>Low Back<br> and Neck Pain<br> Fast</span>
               <div class="hero__header--mobile"><span>Resolve Low Back and Neck Pain Fast</span></div>
             </h1>
             <div class="hero__details">
@@ -66,7 +66,7 @@
                 5.0 <span class="review__rating">★★★★★</span> 86 reviews</span
               >
               <div class="colour-tile__section">
-                <?php 
+                <?php
                   $tile_testimonials = random_reviews($review_data, 3);
                   foreach($tile_testimonials as $testimonial){
                     if(is_null($testimonial)){
